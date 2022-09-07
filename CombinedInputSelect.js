@@ -15,7 +15,7 @@ function CombinedInputSelect(props) {
     setValue(defaultValue);
   }, [defaultValue]);
 
-  const handleInputChage = (e) => setValue(e.target.value);
+  const handleInputChage = (e) => setValue(e.target.value.trimStart());
   const handleSelect = (val) => {
     setValue(val);
     setOpen(false);
